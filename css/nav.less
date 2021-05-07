@@ -1,0 +1,66 @@
+*{
+  margin:0;
+}
+
+body{
+  height: 100%;
+}
+
+nav{
+  height: 80px;
+  background-color: cadetblue;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.dropDown {
+  height: 50px;
+  width: 40px;
+  background-color: cadetblue;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+}
+
+.toggle {
+  display: none;
+}
+
+.navWrapper {
+  height: 200px;
+  width: 100px;
+  background-color: coral;
+  position: fixed;
+  top:50px;
+  right:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@media screen and (min-width: 600px) {
+  .dropDown{
+    display: none;
+  }
+  .navWrapper{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    flex-direction: row;
+    top: 0;
+
+  }
+}
+

@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+}
+body {
+  height: 100%;
+}
+nav {
+  height: 80px;
+  background-color: cadetblue;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+}
+.dropDown {
+  height: 50px;
+  width: 40px;
+  background-color: cadetblue;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+}
+.toggle {
+  display: none;
+}
+.navWrapper {
+  height: 200px;
+  width: 100px;
+  background-color: coral;
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  .dropDown {
+    display: none;
+  }
+  .navWrapper {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    flex-direction: row;
+    top: 0;
+  }
+}
+h1 {
+  font-family: Verdana;
+  text-align: center;
+}
+h2 {
+  font-family: Verdana;
+  text-align: center;
+}
+p {
+  font-family: Verdana;
+  text-align: center;
+  font-size: medium;
+}
+.flavorType {
+  border: 5px solid black;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+.owner {
+  border: 5px solid black;
+  display: block;
+  padding: 5px;
+  margin: auto;
+  width: 50%;
+  float: right;
+}
+.yummy {
+  border: 5px solid black;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+.form {
+  margin-top: 10px;
+  justify-items: center;
+  align-content: center;
+  font-family: Verdana;
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #d6eced;
+}
+.choco {
+  color: #622f0b;
+}
+.chocoPic {
+  border: 5px solid black;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  flex-direction: row;
+}
+.vanilla {
+  color: #b89970;
+}
+.vanillaPic {
+  border: 5px solid black;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  flex-direction: row;
+  float: inherit;
+}
+.trio {
+  color: saddlebrown;
+}
+.trioPic {
+  border: 5px solid black;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  flex-direction: row;
+}
+.blue {
+  color: darkblue;
+}
+.bluePic {
+  border: 5px solid black;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  flex-direction: row;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.popup .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.popup2 .popuptext2 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+}
+.popup2 .popuptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.popup2 .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+.popup3 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.popup3 .popuptext3 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+}
+.popup3 .popuptext3::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.popup3 .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+.popup4 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.popup4 .popuptext4 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+}
+.popup4 .popuptext4::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.popup4 .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1 ;
+  }
+}
+.footer {
+  height: 40px;
+  width: 100%;
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  display: flex;
+  padding: 10px;
+}
+i {
+  color: white;
+  padding: 10px;
+}
+@media screen and (min-width: 600px) {
+  .footer {
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
